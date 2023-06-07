@@ -1,0 +1,53 @@
+# To set name and email for the user who is comminting
+
+	git config --global user.name Pratik
+	git config --global user.email pratikb.tepl@gmail.com
+
+
+# To check set name and email
+	git config --global user.name
+	git config --global user.email
+
+# To open vs code
+	code.
+
+# To initialize git repository (local folder in system)
+	git init
+
+# To view all folders including hiddens
+	ls -lart
+
+# To check the status of repository and files
+	git status
+
+# To add file (file sent to staging area)
+	git add index.html	   (write filename's starting letter and
+                                   hit tab it'll auto complete the file name)
+# To add multiple files
+	git add -A
+
+# To check status of file
+	git status	(will show changes to be committed)
+
+Note: Always we have to commit atleast once to start tracking our project
+      and thats know as initial commit.
+
+# To commit something
+	git commit	
+	(It will open vim editor, for typing commit message press "i"
+	then press "Esc" followed by ":wq" and hig Enter)
+
+# To commit changes or commit after initial commits
+	git commit -m "Commit message"
+
+
+
+
+
+
+
+
+
+
+
+
