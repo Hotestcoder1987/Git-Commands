@@ -8,9 +8,6 @@
 	git config --global user.name
 	git config --global user.email
 
-# To open vs code
-	code.
-
 # To initialize git repository (local folder in system)
 	git init
 
@@ -21,13 +18,13 @@
 	git status
 
 # To add file (file sent to staging area)
-	git add index.html	   (write filename's starting letter and
-                                   hit tab it'll auto complete the file name)
+	git add index.html	   ( write filename's starting letter and
+                                   hit tab it'll auto complete the file name )
 # To add multiple files
 	git add -A
 
 # To check status of file
-	git status	(will show changes to be committed)
+	git status	( Will show changes to be committed )
 
 Note: Always we have to commit atleast once to start tracking our project
       and thats know as initial commit.
@@ -35,14 +32,43 @@ Note: Always we have to commit atleast once to start tracking our project
 # To commit something
 	git commit	
 	(It will open vim editor, for typing commit message press "i"
-	then press "Esc" followed by ":wq" and hig Enter)
+	then press "Esc" followed by ":wq" and hit Enter)
 
 # To commit changes or commit after initial commits
-	git commit -m "Commit message"
+	git commit -m "Commit message"		
+
+# To match current file from last commit of your working directory
+	git checkout contact.html	( To recover last commit )
+
+# To match all current files from last commit of your working directory
+	git checkout -f			( To recover all files )
+
+# To view all the commits and details
+	git log
+
+# To view last N commits and its changes
+	git log -p -5			(N - no of commits)
+	(press "q" to quit)
+
+# To compare working tree to its staging area
+	git diff			(Compare file from file in staging area)
 
 
+________________________________________________________________________________
 
+				Extra Git Commands
 
+# To open vs code
+	code.
+
+# To clear Terminal
+	clear
+
+# To create new file
+	touch contact.html
+
+# To zoom in or zoom out
+	ctrl + or ctrl -
 
 
 
