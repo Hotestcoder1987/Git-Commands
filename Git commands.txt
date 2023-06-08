@@ -53,7 +53,77 @@ Note: Always we have to commit atleast once to start tracking our project
 # To compare working tree to its staging area
 	git diff			(Compare file from file in staging area)
 
+# To commit everthing at once and skip staging area
+	git commit -a -m "Commit message"
 
+# To remove file only from staging area (To do tracked file into untracked file)
+	git rm --cached	filename	(file will still be there in hard disk)
+
+# To remove file from working directory and staging area
+	git rm index.html
+
+# To overview or short status of directory
+	git status -s
+
+Note: There is master branch and user created branches (By default its in master branch)
+
+# To create users branch
+	git branch feature1		(feature1 is branch name)     
+	(when its done the manager will approve to merge it in master branch)
+
+# To switch again in master branch
+	git checkout master
+
+# To merge user created branch to master
+	git merge feature1		(feature1 is branch name)
+
+# To list total branches
+	git branch
+
+# To create and Enter into new branch
+	git checkout -b Pratiks_feature		(Pratiks_feature is branch name)
+
+# To add connect local git repository to remote git repository
+	git remote add origin https://github.com/Hotestcoder1987/Git-Commands.git
+
+# To list remote repository
+	git remote
+
+# To see fetching repository and pushing repository
+	git remote -v
+
+Note: For Pushing into private repository you need to take 
+	read write access by generate SSH key.
+
+# To generate SSH key (only for pushing into private repo)
+	ssh-keygen -t rsa -b 4096 -C "your_email@example.com"	(hit in git bash)
+
+# To get agent pid
+	eval $(ssh-agent- s)
+
+# To add SSH private key to the SSH agent
+	ssh-add ~/.ssh/id_rsa
+
+# To add a new SSH key to your git hub account
+	cat ~/.ssh/id_rsa.pub	
+	(copy the output text into add new ssh tab in git hub settings)
+
+# To set SSH url (copy ssh url from private repo)
+	git remote set-url origin git@github.com:Hotestcoder1987/Git-Commands.git
+
+# To check pushing and fetching urls
+	git remote -v
+
+# To push the local repo to remote (master)repo
+	git push -u origin master	(-u means in future it'll push there itself)
+
+# To push into user created branch
+	git push -u origin Pratiks_feature
+
+Note: Pull request is the request to you hit to repo owner to change/improve the code
+
+# To clone repository
+	git clone address	(Clone with HTTPS)
 ________________________________________________________________________________
 
 				Extra Git Commands
@@ -70,7 +140,11 @@ ________________________________________________________________________________
 # To zoom in or zoom out
 	ctrl + or ctrl -
 
+# To list files in the directory
+	ls
 
+# To change the typed command (history commands)
+	git status	(press up/down arrow key)
 
 
 
